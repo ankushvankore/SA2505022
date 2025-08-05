@@ -26,14 +26,17 @@ public class D17HandlingDropdownList {
 		//This object is just get a list of options
 		System.out.println("Total Countries: " + allCountries.size());
 		
+		/*int i = 0;
 		for(WebElement c : allCountries)
 		{
-			System.out.println(c.getText());
-		}
+			System.out.println(i + ". " + c.getText());
+			i++;
+		}*/
 		
 		//countries.selectByContainsVisibleText("Polan");
 		//countries.selectByVisibleText("Poland");
-		countries.selectByValue("169");
+		//countries.selectByValue("169");
+		countries.selectByIndex(166);
 		System.out.println("Selected Country: " + countries.getFirstSelectedOption().getText());
 		
 	}
