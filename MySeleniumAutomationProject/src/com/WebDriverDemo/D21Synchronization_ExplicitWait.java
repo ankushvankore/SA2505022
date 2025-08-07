@@ -20,9 +20,9 @@ public class D21Synchronization_ExplicitWait {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		
 		driver.findElement(By.xpath("//*[@id=\"HTML47\"]/div[1]/button")).click();
-		WebElement chkBox = driver.findElement(By.id("dte"));
+		//WebElement chkBox = driver.findElement(By.id("dte"));
 		
-		wait.until(ExpectedConditions.elementToBeClickable(chkBox)).click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.id("dte"))).click();
 		
 		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(""))).click();
 	}
