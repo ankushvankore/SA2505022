@@ -1,2 +1,8 @@
 Selenium Official WebSite
 https://www.selenium.dev/
+
+Project Discussion
+https://drive.google.com/drive/folders/1Qo7mYlxQZnT13hbomki1l5lgoo8npoA4
+
+Project Application Link
+https://sampleapp.tricentis.com/101/index.php

@@ -41,7 +41,8 @@ public class A19RedbusAssignment_ExplicitWait {
 		driver.findElement(By.xpath("//*[@id=\"root\"]/div[2]/div/div[2]/div/button")).click();
 		
 		//Result Bus
-		System.out.println("Bus Available: " + driver.findElement(By.xpath("//*[@id=\"8331995\"]/div[2]/div[3]/div/div[1]/div[1]")).getText());
+		System.out.println(wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"8331995\"]/div[2]/div[3]/div/div[1]/div[1]"))).getText());
+		//System.out.println("Bus Available: " + driver.findElement(By.xpath("//*[@id=\"8331995\"]/div[2]/div[3]/div/div[1]/div[1]")).getText());
 		
 		driver.close();
 	}
