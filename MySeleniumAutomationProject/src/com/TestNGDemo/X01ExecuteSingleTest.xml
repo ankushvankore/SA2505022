@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "My First Suite">
+	<test name = "Execute Single Test">
+		<classes>
+			<class name = "com.TestNGDemo.D05BigBasketAssignment">
+				<methods>
+					<include name = "testGheeLink"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

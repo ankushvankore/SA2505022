@@ -1,25 +1,32 @@
 package com.TestNGDemo;
 
-import org.testng.annotations.Test;
-
 import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
-public class D06DataDrivenTesting {
+public class D07AssertionDemo {
 	WebDriver driver;
-	
+	String expUrl = "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index", actUrl;
+
 	@Test(dataProvider = "getLoginData")
 	public void loginToOHRM(String un, String ps) {
 		driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys(un);
 		driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys(ps);
 		driver.findElement(By.xpath("//button[@type='submit']")).submit();
+		
+		actUrl = driver.getCurrentUrl();
+		//Assert.assertEquals(actUrl, expUrl);
+		//Assert.assertEquals(actUrl, expUrl, "Invalid credentials");	//Display messae
+		//Assert.assertTrue(actUrl.equals(expUrl), "Invalid credentials");
+		Assert.assertTrue(actUrl.contains("dashboard"), "Invalid credentials");
 	}
 
 
@@ -33,7 +40,7 @@ public class D06DataDrivenTesting {
 			new Object[] { "admin", "admin123" },
 		};
 	}
-	
+
 	@AfterMethod
 	public void logout() {
 		if (driver.getCurrentUrl().contains("dashboard")) {
@@ -46,7 +53,7 @@ public class D06DataDrivenTesting {
 			System.out.println("Invalid credentials\nTest Case fail");
 		}
 	}
-	
+
 	@BeforeTest
 	public void beforeTest() {
 		driver = new EdgeDriver();
@@ -60,5 +67,4 @@ public class D06DataDrivenTesting {
 	public void afterTest() {
 		driver.close();
 	}
-
 }
