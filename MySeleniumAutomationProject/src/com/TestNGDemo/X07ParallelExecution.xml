@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name = "Passing Parameters" parallel = "methods" thread-count="4">
+<suite name = "Passing Parameters" parallel = "methods" thread-count="3">
 	<test name = "Parameterization">
 		<classes>
 			<class name = "com.TestNGDemo.D02OnlineShoppingApps">

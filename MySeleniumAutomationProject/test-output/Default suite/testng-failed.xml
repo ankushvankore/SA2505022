@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNGDemo.D05BigBasketAssignment">
+      <class name="com.TestNGDemo.D10POMClient">
         <methods>
-          <include name="testExoticLink"/>
-          <include name="afterMethod"/>
-          <include name="launchBigBasket"/>
           <include name="afterTest"/>
+          <include name="registration1"/>
+          <include name="registration3"/>
           <include name="beforeTest"/>
+          <include name="refreshPage"/>
         </methods>
-      </class> <!-- com.TestNGDemo.D05BigBasketAssignment -->
+      </class> <!-- com.TestNGDemo.D10POMClient -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
