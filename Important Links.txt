@@ -6,3 +6,6 @@ https://drive.google.com/drive/folders/1Qo7mYlxQZnT13hbomki1l5lgoo8npoA4
 
 Project Application Link
 https://sampleapp.tricentis.com/101/index.php
+
+Extent Report Dependency
+https://mvnrepository.com/artifact/com.aventstack/extentreports
