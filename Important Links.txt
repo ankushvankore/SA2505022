@@ -9,3 +9,12 @@ https://sampleapp.tricentis.com/101/index.php
 
 Extent Report Dependency
 https://mvnrepository.com/artifact/com.aventstack/extentreports
+
+Maven Complier Plugin
+https://maven.apache.org/plugins/maven-compiler-plugin/examples/compile-using-different-jdk.html
+
+Maven Surefire Plugin
+https://maven.apache.org/surefire/maven-surefire-plugin/examples/testng.html
+
+Cucumber Skeleton
+https://github.com/cucumber/cucumber-java-skeleton/commit/d7249b50c570816eba27ce94557e1de7e9b0f97
