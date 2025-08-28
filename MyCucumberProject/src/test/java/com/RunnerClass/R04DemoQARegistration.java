@@ -11,6 +11,6 @@ import io.cucumber.junit.CucumberOptions;
 					publish = true, 
 					plugin = {"json:Reports/Cucumber-json.json", 
 								"junit:Reports/xmlReport.xml"})
-public class R05DemoQARegistration {
+public class R04DemoQARegistration {
 
 }
