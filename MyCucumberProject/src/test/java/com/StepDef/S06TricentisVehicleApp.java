@@ -10,9 +10,9 @@ import com.Hooks.MyHooks;
 
 import io.cucumber.java.en.*;
 
-public class S06TricentisVehicleApp// extends MyHooks{
-{	
-protected static WebDriver driver;
+public class S06TricentisVehicleApp{
+
+	WebDriver driver = com.Hooks.MyHooks.driver;
 	@Given("Launch Tricentis Vehicle App")
 	public void launch_tricentis_vehicle_app() {
 		

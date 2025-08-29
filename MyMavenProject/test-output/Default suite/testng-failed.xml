@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebTests.D05TestNGReport">
+      <class name="com.WebTests.OHRM_Client">
         <methods>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="loginToOHRM_Fail"/>
-          <include name="loginToOHRM_Skip"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- com.WebTests.D05TestNGReport -->
+      </class> <!-- com.WebTests.OHRM_Client -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

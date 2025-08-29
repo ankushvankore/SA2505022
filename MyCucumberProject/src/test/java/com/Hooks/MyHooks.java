@@ -9,7 +9,7 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
 public class MyHooks {
-	protected static WebDriver driver;
+	public static WebDriver driver;
 
 	//@Before
 	public void launchBrowser() {
